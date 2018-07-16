@@ -1,0 +1,26 @@
+<% include header.ejs%>
+<div class="container">
+<h3>Insert English</h3>
+<hr/>
+<div class="alert">
+<%- messages().toString()%>
+</div>
+<p class="red-text">Enter english word</p>
+<div class="row">
+<form class="col s12" method="POST" action="/admin/insert">
+<div class="row">
+<div class="input-field col s12">
+  <input id="word" type="text" class="validate" name="word" placeholder="Enter English Word" required>
+  <label for="password">English Word</label>
+</div>
+</div>
+
+  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+  <i class="material-icons right">send</i>
+</button>
+      
+
+</form>
+</div>
+</div>
+<% include footer.ejs%>

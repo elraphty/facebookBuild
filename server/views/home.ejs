@@ -1,0 +1,14 @@
+<% include header.ejs %>
+<div class="container">
+<h3>Home</h3>
+<h5>Language list</h5>
+<ul class="lang-list">
+
+<% languages.forEach(function(lang) { %>
+<li><%= lang.lang %> (<%= lang.count %>)</li>
+<% }) %>
+</ul>
+
+</div>
+
+<% include footer.ejs %>

@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.jumbotron{
+  height: 40vh;
+  margin-bottom: 15px !important;
+}
+
+.textarea-wrap{
+  padding: 8px;
+  border: 3px solid #d3d3d3;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 2px rgba(0, 0, 0, 0.6);
+}
+.textarea-wrap:focus{
+  outline: none;
+  border: none;
+}
+textarea{
+  height: 280px;
+  font-size: 20px !important;
+  border: none !important;
+  outline: none !important;
+}
+textarea:focus{
+  outline: none !important;
+  outline-color: yellow;
+  border: 2px solid yellow;
+  border-color: yellow !important;
+}
+textarea::placeholder{
+  font-size: 30px !important;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+textarea::-webkit-placeholder
+{
+  font-size: 45px !important;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  
+}
+textarea::-moz-placeholder{
+  font-size: 45px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.form-control:focus {
+  border-color: white;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width:500px){
+  .jumbotron{
+    height: 25vh;
+    margin-bottom: 15px !important;
+  }
+  textarea{
+    margin-bottom: 8px !important;
+    height: 150px;
+  }
+}
